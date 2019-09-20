@@ -1,0 +1,3 @@
+There are a total of **five** questions that must be coded in your preferred language of Python **or** C++.  Each question can be found in the files named q#.  The .py and .cpp suffixes are for Python and C++, respectively.  Be sure to handle any edge cases you can think of.  At the beginning of your code, also provide the time and space complexity of your solution in comments.  The function headers provided to you will be used to test your code.  **Do not modify them.**  You may create your own helper functions.
+
+No external libraries (e.g., numpy) may be imported/included unless otherwise stated in the question.
