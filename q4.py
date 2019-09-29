@@ -12,6 +12,13 @@
 
 #memo contains tuples of form (operations, first_multiplication_index)
 def least_operations(matrix_arr, left, right, memo):
+    '''
+    This function computes the least number of operations that are needed to multiply the matricies between
+    left and right. These results are stored in memo, along with index of the optimal first matrix multiplication.
+    The reason for this is that depending on the order of multiplication, the overall number of operations can change,
+    so its best to leverage that to get faster multiplication.
+    '''
+
     if (left == right):
         return (0, left)
 
@@ -96,5 +103,16 @@ if __name__ == "__main__":
         [7],
         [2]
     ]
+    
+    matrix_D = [
+        [1, 3, 4],
+    ]
+
+    
+    matrix_E = [
+        [1,2,3],
+        [3,4,5],
+        [5,6,7],
+    ]
     # print(multiply_matrix(matrix_A, matrix_B))
-    print(multiply_matrices([matrix_A, matrix_B, matrix_C]))
+    print(multiply_matrices([matrix_A, matrix_B, matrix_C, matrix_D, matrix_E]))
